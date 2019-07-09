@@ -1,0 +1,12 @@
+[Unit]
+Description=pifan
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/local/bin/pifan
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
